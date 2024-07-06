@@ -1,0 +1,12 @@
+// 16)endsLy
+// Given a string, return true if it ends in "ly".
+
+
+// endsLy("oddly") → true
+// endsLy("y") → false
+// endsLy("oddy") → false
+
+// Code:
+public boolean endsLy(String str) {
+  return str.length()<2? false: str.substring(str.length()-2).equals("ly") ? true:false ;
+}

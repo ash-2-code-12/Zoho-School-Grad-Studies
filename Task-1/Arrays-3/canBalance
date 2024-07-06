@@ -1,0 +1,20 @@
+// 4)canBalance
+// Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
+
+// canBalance([1, 1, 1, 2, 1]) → true
+// canBalance([2, 1, 1, 2, 1]) → false
+// canBalance([10, 10]) → true
+
+// Code:
+public boolean canBalance(int[] nums) {
+  int sumf=0, sumb=0;
+  for(int i=0; i+1<nums.length;i++){
+    sumf+=nums[i];
+    sumb=0;
+    for(int j=i+1;j<nums.length;j++){
+      sumb+=nums[j];
+    }
+    if(sumf==sumb)return true;
+  }
+  return false;
+}

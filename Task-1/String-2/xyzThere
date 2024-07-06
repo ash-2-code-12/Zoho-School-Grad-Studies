@@ -1,0 +1,22 @@
+// 6)xyzThere
+// Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+
+// xyzThere("abcxyz") → true
+// xyzThere("abc.xyz") → false
+// xyzThere("xyz.abc") → true
+
+// Code:
+public boolean xyzThere(String str) {
+  // int index= str.indexOf("xyz");
+  int index;
+  for(int i=0; i+2<str.length(); i++){
+    index = str.substring(i).indexOf("xyz");
+    if(checkOcc(index+i,str) && index!=-1) return true;
+  }
+  return false;
+}
+public boolean checkOcc(int index,String str){
+  if (index!=0 && (index==-1 || str.charAt(index-1)=='.')){
+    return false;
+  }
+  return true;

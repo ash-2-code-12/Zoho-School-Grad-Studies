@@ -1,0 +1,17 @@
+// 7)sameEnds
+// Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. For example, sameEnds("abXab") is "ab".
+
+// sameEnds("abXYab") → "ab"
+// sameEnds("xx") → "x"
+// sameEnds("xxx") → "x"
+
+// Code:
+public String sameEnds(String string) {
+  String result="";
+  int n=string.length();
+  for(int i=0; i<=n/2; i++){
+    if(string.substring(0,i).equals(string.substring(n-i))){
+      result=string.substring(0,i);
+    }
+  }
+  return
