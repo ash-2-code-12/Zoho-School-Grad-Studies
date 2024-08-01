@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Careers Page</title>
+        <script src="https://kit.fontawesome.com/673552741b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main-bg">
+            <div class="navbar">
+                <img class="logo" src="./images/careerpagelogo.png" alt="LOGO">
+            </div>
+
+            <div class="main-content">
+                <div class="banner">
+                    <div class="banner-content">
+                        <h3>Zoho Corporation | Full time</h3>
+                        <h1>Web Developers</h1>
+                        <div class="icon-box">
+                            <i class="fa-solid fa-share-nodes share-icon"></i> <!--style="color: #ff0000;"-->
+                            <i class="fa-brands fa-facebook-f icon"></i>
+                            <i class="fa-brands fa-x-twitter icon"></i>
+                            <i class="fa-brands fa-linkedin-in icon"></i>
+                            <i class="fa-brands fa-whatsapp icon"></i>
+                            <i class="fa-brands fa-telegram icon"></i>
+                            <i class="fa-solid fa-link icon"></i>                   
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="page-navigator">
+                    <a href="https://www.google.com" target="_blank">Job listing</a><span>></span>
+                    <a href="https://www.google.com" target="_blank">Job details</a><span>></span>
+                    <p>Job applications</p>
+                </div>
+    
+                <div class="resume-upload-section">
+                    <div>
+                        <p class="small-heading">Autofill Application</p>
+                        <p>Upload your resume/cv in seconds with the autofill option.</p>
+                    </div>
+                    <div class="upload-section">
+                        <div class="file-drop-area">
+                            <p><a href="https://careers.zohocorp.com/jobs/Careers/2803000614913786/Web-Developers?$apply=true&source=CareerSite&$callback_url=https://www.zoho.com/careers/jobdetails/?job_id=2803000614913786" target="_blank">Upload your resume</a> or drag and drop it here<br>Only .doc, .docx, .pdf, .odt, .rtf<br> (Optional)
+                            </p>
+                        </div>
+                        <div class="easy-apply-section">
+                            <p class="please-apply-text">Please sign in to apply with Zoho Corporation</p>
+                            <button class="easy-apply-btn">
+                                <i class="fa-solid fa-z easy-apply-btn-logo" ></i>
+                                <p class="easy-apply-btn-text">Easy Apply</p>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="personal-details-form-section">
+                    <p class="small-heading">Person Details <span style="color:antiquewhite;">-</span> <span class="clear-option">Clear</span></p>
+                    <form id="myform">
+                        <label for="firstName">First Name <span class="asterisk">*</span></label>
+                        <div class="firstname-block">
+                            <select id="salutation">
+                                <option value="none">-None-</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                            </select>
+                            <input id="firstName" type="text" class="input-fields">
+                        </div>
+                            
+                        <div>
+                            <label for="lastName">Last Name <span class="asterisk">*</span></label>
+                            <input id="lastName" type="text" class="input-fields">
+                        </div>
+
+                        <div>
+                            <label for="email">Email <span class="asterisk">*</span></label>
+                            <input id="email" type="text" class="input-fields">
+                        </div>
+
+                        <div>
+                            <label for="contact">Contact <span class="asterisk">*</span></label>
+                            <input id="contact" type="text" class="input-fields">
+                        </div>
+
+                        <div>
+                            <label for="yearOfGraduation">Year of Graduation <span class="asterisk">*</span></label>
+                            <input id="yearOfGraduation" type="text" class="input-fields">
+                        </div>
+                        <div>
+                            <label for="gender">Gender <span class="asterisk">*</span></label>
+                            <select id="gender" class="input-fields">
+                                <option value="none">-None-</option>
+                                <option selected value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="experience">Experience in years <span class="asterisk">*</span></label>
+                            <select id="experience" class="input-fields">
+                                <option value="none">-None-</option>
+                                <option selected value="0">Fresher</option>
+                                <option value="0.5">0-1 Years</option>
+                                <option value="0.5">1-2 Years</option>
+                                <option value="0.5">2-3 Years</option>
+                                <option value="0.5">3-4 Years</option>
+                                <option value="0.5">4-5 Years</option>
+                                <option value="0.5">6-7 Years</option>
+                                <option value="0.5">7-8 Years</option>
+                                <option value="0.5">8-9 Years</option>
+                                <option value="0.5">9-10 Years</option>
+                                <option value="0.5">10+ Years</option>
+                                <option value="0.5">12+ Years</option>
+                                <option value="0.5">15+ Years</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="currentEmployer">Current Employer <span class="asterisk">*</span></label>
+                            <input id="currentEmployer" type="text" class="input-fields">
+                        </div>
+                        <div>
+                            <label for="currentCTC">Current CTC (In Laksh Per Annum) <span class="asterisk">*</span></label>
+                            <select id="currentCTC" class="input-fields">
+                                <option selected value="none">-None-</option>
+                                <option value="NA">Not Applicable</option>
+                                <option value="3">1-3</option>
+                                <option value="5">3-5</option>
+                                <option value="7">5-7</option>
+                                <option value="9">7-9</option>
+                                <option value="3">9-10</option>
+                                <option value="3">10+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="expectedCTC">Expected CTC (In Laksh Per Annum) <span class="asterisk">*</span></label>
+                            <select id="expectedCTC" class="input-fields">
+                                <option selected value="none">-None-</option>
+                                <option value="NA">Open</option>
+                                <option value="5">3-5</option>
+                                <option value="7">5-7</option>
+                                <option value="9">7-9</option>
+                                <option value="3">9-10</option>
+                                <option value="3">10+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="noticePeriod">Notice Period <span class="asterisk">*</span></label>
+                            <select id="noticePeriod" class="input-fields">
+                                <option selected value="none">-None-</option>
+                                <option value="Immediate">Immediate</option>
+                                <option value="NA">Not Applicable</option>
+                                <option value="5">1 Month</option>
+                                <option value="7">2 Months</option>
+                                <option value="9">3 Months</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="skillSet">Current Employer <span class="asterisk">*</span></label>
+                            <input id="skillSet" type="text" class="input-fields">
+                        </div>
+                        <div>
+                            <label for="source">Notice Period <span class="asterisk">*</span></label>
+                            <select id="source" class="input-fields">
+                                <option selected value="none">-None-</option>
+                                <option value="newspaper">Newspaper AD</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="linkedIn">LinkedIn</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="referral">Refferal</option>
+                                <option value="careersPage">Zoho Careers Page</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="currentlocation">Current Location <span class="asterisk">*</span></label>
+                            <input id="currentlocation" type="text" class="input-fields" placeholder="Search and add skills">
+                        </div>
+                        <div>
+                            <label for="preferredLocation">Preferred Location <span class="asterisk">*</span></label>
+                            <select id="preferredLocation" class="input-fields">
+                                <option selected value="none">-None-</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="coimbatore">Coimbatore</option>
+                                <option value="madurai">Madurai</option>
+                                <option value="salem">Salem</option>
+                                <option value="Tenkasi">Tenkasi</option>
+                                <option value="Tirunelveli">Tirunelveli</option>
+                            </select>
+                        </div>
+
+                        <p class="small-heading form-upload-text">Upload Your Resume</p>
+                        <div class="file-drop-area form-file-drop-area">
+                            <p>Browse</p>
+                        </div>
+                        <div class="form-button-container">
+                            <button class="cancel-form-btn form-btn">Cancel</button>
+                            <button class="submit-form-btn form-btn">Submit Application</button>
+                        </div>
+
+                    </form>  
+                </div>
+            </div>
+            <div class="foot-navigator">
+                <a href="https://www.google.com" target="_blank">View all jobs</a><span>•</span>
+                <a href="https://www.google.com" target="_blank">Visit website</a>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <p>Powered by </p>
+                    <img src="./images/zoho_recruit-footer-icon.png" alt="zohorecruitIcon">
+                </div>
+            </div>
+
+        </div>
+        <script>
+            // Prevent form submission on Enter key press
+            document.getElementById('myForm').addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                }
+            });
+    
+            // Prevent form submission on button click
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // Add custom submit handling here
+                alert('Form submission prevented.');
+            });
+        </script>
+    </body>
+</html>

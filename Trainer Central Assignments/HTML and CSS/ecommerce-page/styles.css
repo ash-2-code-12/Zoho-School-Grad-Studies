@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.nav-logo {
+    width: 155px;
+    margin: 0px;
+}
+
+#banner-section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("Screenshot\ 2024-07-31\ 174806.png");
+    background-size: cover;
+}
+
+#services-section {
+    font-family: "Roboto";
+}
+
+.services-heading {
+    color: #183b56;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.services-desc {
+    color: #616c7c;
+    font-size: 18px;
+}
+
+.services-card-title {
+    margin-top: 5px;
+    color: #1f2933;
+    font-size: 20px;
+}
+
+.services-card-desc {
+    color: #7b8794;
+    font-size: 14px;
+}
+
+#products-section {
+    font-family: "Roboto";
+}
+
+.services-heading {
+    color: #183b56;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.products-card {
+    height: 328px;
+    border-radius: 16px;
+}
+
+.headphones-bg {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png");
+    background-size: cover;
+}
+
+.laptops-bg {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png");
+    background-size: cover;
+}
+
+.products-card-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.products-card-desc {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.view-details-btn {
+    color: #ff9f00;
+    background-color: #ffffff;
+    border-width: 0;
+    border-radius: 100px;
+    font-size: 16px;
+    height: 44px;
+    width: 134px;
+}
+
+.all-products-link a {
+    color: #ff9f00;
+    font-weight: bold;
+}
+
+.all-products-link a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.m-btn {
+    border-color: black;
+}
+
+.modal-topic {
+    color: #323f4b;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.modal-desc {
+    font-size: 14px;
+    color: #323f4b;
+}
+
+.modal-desc span {
+    color: #183b56;
+    font-weight: bold;
+}
+
+
+#explore-deals-section {
+    background-color: #f5f7fa;
+    font-family: "Roboto";
+
+}
+
+.explore-section-main-head {
+    color: #183b56;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.explore-deals-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 530px;
+}
+
+.d-flexor {
+    gap: 5.4%;
+    margin-bottom: 6px;
+}
+
+.explore-deals-card-head {
+    color: #183b56;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.explore-deals-card-item {
+    width: 50%;
+}
+
+.explore-deals-card-item-img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.explore-deals-card-item-title {
+    color: #1f2933;
+    font-size: 15.3px;
+    font-weight: 500;
+}
+
+.explore-deals-card a {
+    color: #ff9f00;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.explore-deals-card a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+#contact-us-section {
+    background-color: #f5f7fa;
+
+    font-family: "Roboto";
+}
+
+.contact-us-head {
+    color: #183b56;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contact-us-btn {
+    color: #ff9f00;
+    border-color: #ff9f00;
+    border: solid;
+    border-width: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+#footer-section {
+    background-color: #0d2436;
+    font-family: "Roboto";
+}
+
+.follow-icon {
+    font-size: 20px;
+    color: #5a7184;
+    margin-top: 15px;
+}
+
+.d-flexor {
+    gap: 9px;
+}
+
+.icon-bg {
+    background-color: #202b36;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.footer-icon {
+    width: 150px;
+}
+
+.footer-address {
+    font-size: 15px;
+    color: #5a7184;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footer-title {
+    color: #5a7184;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: #5a7184;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-text li {
+    margin-bottom: 5px;
+}
+
+.hr-line {
+    background-color: #5a7184;
+}
+
+.footer-credit {
+    color: #959ead;
+    font-size: 14px;
+}
