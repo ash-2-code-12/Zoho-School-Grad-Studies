@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+</head>
+<body id="body">
+    <audio id="background-audio" style="display: none;" loop>
+        <source src="./assets/main-bg/y2mate-com-harry-potter-ringtone-bgm-tone-54095.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="startPage" >
+        <img class="start-page-loader" src="./assets/main-bg/start-page-loader.png" >
+    </div>
+    <div id="main-bg" class="main-bg" style="display: none;">
+        <div class="audio-icon" id="audio-icon">
+            <i id="play-icon" class="fas fa-play"></i> <!-- Default icon (play) -->
+        </div>
+        
+         <div id="mainContent" class="main-content">
+            <!-- Home Page -->
+            <div id="homePage" >
+                <div class="home-btn-container">
+                    <img class="up-float" id="startQuiz" src="./assets/main-bg/start-btn.png" alt="Start Quiz">
+                    <img class="down-float" id="leaderboard" src="./assets/main-bg/leader-boards-btn.png" alt="Leaderboards">
+                </div>
+            </div>
+
+            <!-- Select Level Page -->
+            <div id="quizLevelPage" style="display: none;">
+                <img class="select-difficulty" src="./assets/main-bg/select-difficulty.png"/>
+                <br>
+                <div class="difficulty-btn-container">
+                    <img onclick="loadEasyQuestions()" id="easy-btn" src="./assets/main-bg/easy-btn.png" />
+                    <br><img onclick="loadMediumQuestions()" id="medium-btn" src="./assets/main-bg/medium-btn.png"/>
+                    <br><img onclick="loadHardQuestions()" id="hard-btn" src="./assets/main-bg/hard-btn.png"/>
+                </div>
+                <i id="backIcon" class="fas fa-arrow-left back-icon"></i>
+                
+            </div>
+            <img style="display: none;" id="well-done" src="./assets/main-bg/well-done.png">
+            <!-- results -->
+            <div id="results" style="display: none;">
+                
+                <div id="results-cont">
+                    <p>Quiz Finished!</p>
+                    <p id="finalScore"></p>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                    <img id="saveBtn" src="./assets/main-bg/save-result.png" onclick="saveResult()"></img>
+                    <div>
+                    <i id="resultsToHome" class="fas fa-arrow-left back-icon"></i>
+                </div>
+                </div>
+            </div>
+
+            <!-- Quiz Page -->
+            <div id="quizPage" style="display: none;">
+                
+                <div id="quiz-content">
+                    <div id="timer">Expelliarmus!!</div>
+                    <div id="ques-ans">
+                        <div class="quiz-block ques-block" id="question">
+                            <p id="questionEl">Question goes here...</p>
+                        </div>
+                        <div class="quiz-block" id="answer">
+                            <div id="options-container">
+                                <div class="option-box"><img src="./assets/houses/gryffindor.png" style="width: 30px;"><p id="option1" class="options" onclick="selectOption(0)">option 1</p></div>
+                                <div class="option-box"><img src="./assets/houses/hufflepuff.png" style="width: 30px;"><p id="option2" class="options" onclick="selectOption(1)">option 2</p></div>
+                                <div class="option-box"><img src="./assets/houses/ravenclaw.png" style="width: 30px;"><p id="option3" class="options" onclick="selectOption(2)">option 3</p></div>
+                                <div class="option-box"><img src="./assets/houses/slytherin.png" style="width: 30px;"><p id="option4" class="options" onclick="selectOption(3)">option 4</p></div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <button id="next-button" onclick="loadNextQuestion()">Next →</button>
+                </div>
+                
+                
+            </div>
+                        
+        </div>
+
+        <!-- Leaderboard Page -->
+        <div id="leaderboardPage" class="leaderboardPage" style="display: none;">
+               
+            <img class="select-difficulty" src="./assets/main-bg/leaderboard-head.png"/>
+            
+             <!-- leaderboard list -->
+              <div id="leader-board-list">
+                <div><span class="rank">Rank</span> <span class="name">Name</span>  <span class="score">Score</span>  <span class="timeLeft">Timefeft</span>  </div>
+              </div>
+             <div>
+                 <i id="backIcon2" class="fas fa-arrow-left back-icon"></i>
+             </div>
+         </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+</body>
+</html>
