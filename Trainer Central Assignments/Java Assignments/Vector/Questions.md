@@ -1,0 +1,3 @@
+1. Write a Java program that creates a `Vector` of integers. Add the numbers 10, 20, 30, 40, and 50 to the vector. Retrieve and print the element at the second index (third element) in the vector. Then, print all elements in the vector.
+2. Write a Java program that creates a `Vector` of doubles. Add five random double values to the vector. Check if the value 10.5 is in the vector. Print the size of the vector before and after adding an additional value.
+3. Write a Java program that initializes a `Vector` of strings with the values {"red", "green", "blue", "yellow"}. Convert the vector to an array, print the array, then convert the array back to a vector and print the resulting vector.

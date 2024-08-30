@@ -1,0 +1,4 @@
+1. Write a Java program that creates a `Stack` of integers. Push the numbers 10, 20, 30, 40, and 50 onto the stack. Then, pop the top element and print the remaining elements in the stack.
+2. Write a Java program that uses a `Stack` to reverse a string. For example, given the input string "hello", the program should output "olleh".
+3. Create a Java program that checks if a string containing parentheses is balanced using a `Stack`. For example, the input "(())" is balanced, but the input "(()" is not.
+4. Write a Java program that initializes a `Stack` of doubles with the values {1.1, 2.2, 3.3, 4.4, 5.5}. Convert the stack to an array and print the array. Then, create a new stack from the array and print the elements of the new stack.
